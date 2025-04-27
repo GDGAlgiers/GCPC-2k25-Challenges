@@ -15,3 +15,6 @@ def LinearMemoryReprogramming(s: str) -> int:
                         dp[i][j] = min(dp[i][j], dp[i + 1][k - 1] + dp[k][j])
 
         return dp[0][n - 1]
+if __name__ == "__main__":
+    s = input().strip()  # Read a line and remove spaces/newlines
+    print(LinearMemoryReprogramming(s))

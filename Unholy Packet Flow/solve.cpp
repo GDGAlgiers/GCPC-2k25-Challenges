@@ -2,7 +2,7 @@
 
 using namespace std;
 
-const int N=1e9;
+const int N=1000;
 int n,a,b,x,y,ans;
 
 int dp[N][N];
@@ -43,6 +43,6 @@ int main(){
 			dp[i-x+1][j-y+1]=min(dp[i-x][j-y+1],dp[i-x+1][j-y])+gcd(i,a)+gcd(j, b);
 		}
 	}
-    cout<<dp[n-x+1][n-y+1];
+    cout<<dp[n-x+1][n-y+1]<< endl;
     return 0;
 }

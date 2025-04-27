@@ -100,7 +100,7 @@ int main() {
         printf("[]");
     else {
         for (int i = 0; i <= result; i++)
-            printf("(%d, %d)", path[i].x + 1, path[i].y + 1); // Convert back to 1-based indexing
+            printf("(%d,%d)", path[i].x + 1, path[i].y + 1); // Convert back to 1-based indexing
     }
 
     return 0;
